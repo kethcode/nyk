@@ -8,7 +8,20 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <>
-      <Image src="/landing_25pc_b.png" alt="landing background" layout="fill" />
+      <Image
+        src="/landing_25pc_b.png"
+        alt="landing background"
+        fill
+		objectFit="cover"
+        sizes="	(max-width: 640px) 640px,
+					(max-width: 768px) 768px,
+					(max-width: 1080px) 1080px,
+					(max-width: 1280px) 1280px,
+					(max-width: 1536px) 1536px,
+					(max-width: 1920px) 1920px,
+					(max-width: 2560px) 2560px,
+					(max-width: 3840px) 3840px"
+      />
 
       <main className={styles.main}>
         <div className={styles.description}>
